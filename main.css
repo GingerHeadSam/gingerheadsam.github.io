@@ -49,6 +49,10 @@ nav ul :hover{
 	left: 10em;
 }
 
+#smallScreenText {
+	display: none;
+}
+
 #meImage{
 	position: absolute;
 	left: 50%;
@@ -210,6 +214,10 @@ nav ul :hover{
 		position: absolute;
 		top: 10em;
 		left: 3em;
+	}
+
+	#smallScreenText{
+		display: inline;
 	}
 
 	#introText{
