@@ -1,0 +1,146 @@
+html, body {
+	font-family: "Helvetica", sans-serif;
+}
+
+body {
+	position: relative;
+	background-color: lightgray;
+	overflow: hidden;
+
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	border-bottom: 0.1em solid black;
+}
+
+nav ul {
+	width: 50%;
+	text-align: right;
+}
+
+nav h3{
+	width: 50%;
+	margin-top: 1em;
+}
+
+
+nav ul li{
+	display: inline;
+}
+
+nav li{
+	text-decoration: none;
+	list-style: none;
+	padding: 1em;
+	color: black;
+}
+
+nav ul :hover{
+	color:darkblue;
+	cursor: pointer;
+}
+
+#siteIntroSection {
+	position: absolute;
+	top: 10em;
+	left: 10em;
+}
+
+#meImage{
+	position: absolute;
+	left: 45em;
+	top: -5em;
+	width: 50%;
+	z-index: -1;
+}
+
+#meImage img{
+	max-width: 100%;
+	height: auto;
+}
+
+#introHeader{
+	font-size: 5em;
+	margin-bottom: 0;
+}
+
+#introText{
+	font-size: 1.5em;
+}
+
+#introText a{
+	text-decoration: none;
+}
+
+#introText i{
+	color: green;
+}
+
+#projectSection{
+	width: 40%;
+	position: absolute;
+	left:10em;
+	top: 10em;
+	display: none;
+}
+
+#projectSection h2{
+	width: 100%;
+	border-bottom: 0.1em solid darkgray;
+}
+
+.currentProject{
+	cursor: pointer;
+	width: 100%;
+	padding-left: 0.5em;
+
+}
+
+#diss p, #iccup p{
+	display: none;
+}
+
+#iccupOpenButton{
+	margin-bottom: 0.5em;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	width: 4em;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	font-weight: 550;
+	display: none;
+	box-shadow: 4px 4px 9px #888888
+}
+
+#arthurOpenButton{
+	margin-bottom: 0.5em;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	width: 4em;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	font-weight: 550;
+	display: none;
+	box-shadow: 4px 4px 9px #888888
+}
+
+#resumeSection {
+	width: 40%;
+	position: absolute;
+	left:10em;
+	top: 10em;
+	display: none;
+}
+
+#resumeSection h2 {
+	width: 100%;
+	border-bottom: 0.1em solid darkgray;
+}
+
+#resumeProfile p {
+	display: none;
+}
