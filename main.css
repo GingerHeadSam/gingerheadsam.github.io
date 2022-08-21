@@ -145,8 +145,13 @@ nav ul :hover{
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 	#meImage{
 		display: none;
+	}
+
+	nav h3{
+		width: 25%;
+		margin-top: 1em;
 	}
 }
