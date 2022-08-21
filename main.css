@@ -144,3 +144,9 @@ nav ul :hover{
 #resumeProfile p {
 	display: none;
 }
+
+@media screen and (max-width: 600px) {
+	#meImage{
+		display: none;
+	}
+}
