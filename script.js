@@ -1,5 +1,9 @@
 var url = "";
 
+//hamburgerButton Change
+function myFunction(x) {
+	x.classList.toggle("change");
+  }
 
 //Nav clicks
 $("#nameNav").click(function(){
