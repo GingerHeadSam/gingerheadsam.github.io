@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta charset="UTF-8">
+    <meta name="description" content="ICCup score app">
+    <meta name="author" content="Sam Carolan">
+</head>
+<body>
+	<div id="welcome">
+		<p id="appWelcome"> Welcome to ICCup</p>
+
+		<div id="startGame">
+			<p> Start Game</p>
+		</div>
+
+		<div id="results">
+			<p> <span>Scoreboard</span> <br> (Coming soon)</p>
+		</div>
+	</div>
+
+	<div id="playerSelection">
+		<p id="inputPlayerNames"> Please input player names </p>
+
+		<label>Player 1: </label>
+		<input id="player1" type="text" name="player1">
+		<br>
+		<br>
+		<label>Player 2: </label>
+		<input id="player2" type="text" name="player2">
+		<p id="playerNameError">
+			Invalid Player Name
+		</p>
+		<div id="continueButton">
+			<p> Continue </p>
+		</div>
+
+	</div>
+
+
+
+	<div id="gameContainer">
+		<div class="flexContainer">
+			<div class="option" id="six"> Six </div>
+			<div class="option" id="four"> Four </div>
+		</div>
+		<div class="flexContainer">
+			<div class="option" id="one"> One </div>
+			<div class="option" id="out"> Out </div>
+		</div>
+		<div class="flexContainer">
+			<div class="option" id="miss"> Miss</div>
+			<div class="option" id="wide"> Wide </div>
+		</div>
+		<div id="scoreboard">
+			<p id="playerName"> *Current Player* </p>
+
+			<div class="flexContainer2">
+				<div class="scoreboardElement">
+					<p class="scoreboardElementTitle"> Runs </p>
+					<p id="scoreboardElementRun"> 0 </p>
+				</div>
+				<div class="scoreboardElement">
+					<p class="scoreboardElementTitle"> Overs </p>
+					<p id="scoreboardElementBalls"> 0 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="nextContainer">
+		<p id="opponentName"> Opponent </p>
+		<div class="flexContainer3">
+				<div class="scoreboardElement">
+					<p class="scoreboardElementTitle"> Runs </p>
+					<p id="scoreboardOpponentRuns"> 0 </p>
+				</div>
+				<div class="scoreboardElement">
+					<p class="scoreboardElementTitle"> Overs </p>
+					<p id="scoreboardOpponentBalls"> 0 </p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div id="nextPlayer">
+				<p>Next Player</p>
+			</div>
+			<br>
+			<div id="endGame">
+				<p>End Game</p>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
