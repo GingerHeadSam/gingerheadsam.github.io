@@ -105,6 +105,22 @@ $("#iccup").click(function(){
 	}
 });
 
+var APCounter = 0;
+$("#APPortfolio").click(function(){
+	if(APCounter == 0){
+		$("#APPortfolio p").css('display', 'block');
+		$("#APPortfolioOpenButton").css('display', 'block');
+		$("#APPortfolio").css('border-bottom', '0.1em solid darkgray');
+		$("#APPortfolio span").html("&#x25B2;");
+		APCounter = 1;
+	}else {
+		$("#APPortfolio p").css('display', 'none');
+		$("#APPortfolioOpenButton").css('display', 'none');
+		$("#APPortfolio").css('border-bottom', 'none');
+		$("#APPortfolio span").html("&#x25BC;");
+		APCounter = 0;
+	}
+});
 
 
 $("#iccupOpenButton").click(function(){

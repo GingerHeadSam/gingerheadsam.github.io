@@ -103,7 +103,7 @@ nav ul :hover{
 
 }
 
-#diss p, #iccup p{
+#diss p, #iccup p, #APPortfolio p{
 	display: none;
 }
 
@@ -120,7 +120,7 @@ nav ul :hover{
 	box-shadow: 4px 4px 9px #888888
 }
 
-#arthurOpenButton{
+#APOpenButton{
 	margin-bottom: 0.5em;
 	border-radius: 0.5em;
 	padding: 0.5em;
