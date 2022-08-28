@@ -1,20 +1,19 @@
 var url = "";
 
-//hamburgerButton Change
-function myFunction(x) {
-	x.classList.toggle("change");
-  }
-
 //Nav clicks
 $("#nameNav").click(function(){
-	$("#aboutSection").css('display', 'none');
-	$("#resumeSection").css('display', 'none');
-	$("#projectSection").css('display', 'none');
-	$("#contactSection").css('display', 'none');
-	$("#siteIntroSection").css('display', 'block');
-	$("#meImage").css('display', 'block');
-	$("body").css("overflow-y", "hidden");
-	window.location.hash = "Home"
+	if ($(window).width() > 1000) {
+		$("#aboutSection").css('display', 'none');
+		$("#resumeSection").css('display', 'none');
+		$("#projectSection").css('display', 'none');
+		$("#contactSection").css('display', 'none');
+		$("#siteIntroSection").css('display', 'block');
+		$("#meImage").css('display', 'block');
+		$("body").css("overflow-y", "hidden");
+		window.location.hash = "Home"
+	}
+
+	
 });
 
 $("#homeNav").click(function(){
@@ -131,3 +130,4 @@ $("#iccupOpenButton").click(function(){
     	alert('Please allow popups for this website');
 	}
 });
+
