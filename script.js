@@ -131,3 +131,12 @@ $("#iccupOpenButton").click(function(){
 	}
 });
 
+$("#APOpenButton").click(function(){
+	var win = window.open('/APPortfolio/index.html', '_blank');
+	if (win) {
+    	win.focus();
+	} else {
+    	alert('Please allow popups for this website');
+	}
+});
+
