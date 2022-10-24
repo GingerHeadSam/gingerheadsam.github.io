@@ -8,8 +8,6 @@ function viewportCheck() {
 	viewportHeight = document.documentElement.clientHeight;
 }
 
-
-
 //sets element sizes for different screen sizes. Mainly used for orbit on home page.
 function setSize() {
 
@@ -133,4 +131,8 @@ function popOut(link) {
 $(".successClose").on("click", function() {
 	$(".successModal").css("display", "none");
 	window.location.replace("index.html");
+});
+
+$(".APContactSubmit").on("click", function() {
+	alert("I am an alert box!");
 });
