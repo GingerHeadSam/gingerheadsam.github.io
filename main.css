@@ -1,14 +1,15 @@
 html, body {
-	font-family: "Helvetica", sans-serif;
+	font-family: "Arial", sans-serif;
 }
 
 body {
 	position: relative;
-	background-color: lightgray;
+	background-color: #BFC5F0;
 	overflow: hidden;
 	max-width: 1920px;
-
+	color: black;
 }
+
 
 nav {
 	display: flex;
@@ -58,7 +59,7 @@ nav ul :hover{
 #meImage{
 	position: absolute;
 	left: 50%;
-	top: -5em;
+	top: -2em;
 	width: 50%;
 	z-index: -1;
 }
@@ -105,7 +106,7 @@ nav ul :hover{
 
 }
 
-#diss p, #iccup p, #APPortfolio p{
+#diss p, #iccup p, #APPortfolio p, #ROF p{
 	display: none;
 }
 
@@ -227,3 +228,16 @@ nav ul :hover{
 
 }
 
+footer {
+	position: fixed;
+	display: block;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color:  slategrey;
+	z-index: -1;
+}
+
+footer h6 a{
+	text-decoration: none;
+}
