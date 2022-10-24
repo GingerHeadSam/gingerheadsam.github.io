@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+	<link rel="stylesheet" href="css/foundation.css" type="text/css">
+	<link rel="stylesheet" href="css/app.css" type="text/css">
+	
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Contact - Arthur Parisi</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Portfolio for creator Arthur Parisi">
+	<meta name="author" content="Sam Carolan">
+</head>
+<body id="contactPage">
+
+
+	<!-- Top Navigation -->
+	<!-- Large Nav -->
+	<div id="navContainer">
+		<div id="navBox" class="show-for-large">
+			<p><a href="index.html">Arthur Parisi</a></p>
+			<ul class="horizontalNav medium-horizontal menu align-center">
+				<li><a href="bio.html">Bio</a></li>
+				<li><a href="videos.html">Videos</a></li>
+				<li><a href="showreels.html">Showreels</a></li>
+				<li><a href="contact.html"  class="activeNav">Contact</a></li>
+			</ul>
+		</div>
+		<!-- Medium Nav -->
+		<div id="mediumNav" class="show-for-medium-only">
+			<p>Arthur Parisi</p>
+			<ul class="horizontalNav medium-horizontal menu align-center">
+				<li><a href="bio.html">Bio</a></li>
+				<li><a href="videos.html" >Videos</a></li>
+				<li><a href="showreels.html">Showreels</a></li>
+				<li><a href="contact.html" class="activeNav">Contact</a></li>
+			</ul>
+		</div>
+		<!-- Small Nav -->
+		<div class="title-bar show-for-small-only" data-responsive-toggle="smallMenu" data-hide-for="medium">
+			<button class="menu-icon" type="button" data-toggle></button>
+			<div class="title-bar-title" id="smallTitle"><a href="index.html">Arthur Parisi</a></div>
+		</div>
+
+		<div class="top-bar show-for-small-only" id="smallMenu">
+			<div class="top-bar-left">
+				<ul class="dropdown menu" data-dropdown-menu>
+					<li><a href="bio.html">Bio</a></li>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="showreels.html">Showreels</a></li>
+					<li><a href="contact.html" class="activeNav">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Main Body. Max size set in CSS. Will fill smaller screens while staying in center for large. -->
+	<div class="contactContainer">
+		<form class="contact-us-form" method="post" action="contactHandler.php">
+			<h1 class="contact-us-header">Contact Me</h1>
+			<input type="text" name="name" placeholder="Full name">
+			<input type="email" name="email" placeholder="Email">
+			<textarea name="message" rows="5" placeholder="Type your message here"></textarea>
+			<div class="contact-us-form-actions">
+				<input type="submit" class="button" value="submit" />
+			</div>
+		</form>
+	</div>
+
+
+
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.js"></script>
+	<script src="js/app.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

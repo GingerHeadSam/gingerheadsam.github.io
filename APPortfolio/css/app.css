@@ -1,0 +1,366 @@
+body {
+	font-family: "Helvetica", sans-serif;
+	margin: 0;
+	top: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-size: 62.5%;
+	height: 100%;
+	background-color: darkgray;
+}
+
+#navContainer {
+	text-align: center;
+	color: white;
+}
+
+.activeNav {
+	color: rgba(255, 255, 255, 0.6) !important;
+
+}
+
+/*Large nav*/
+#navBox {
+	position: absolute;
+	background-color: rgba(	10, 10, 10, 0.4);
+	width: 35%;
+	margin-left: 32.5%;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0px 0px 74px 7px rgba(0,0,0,0.75);
+	backdrop-filter: blur(5px);
+}
+
+#navBox p, #mediumNav p {
+	font-size: 3.5rem;
+}
+
+#navBox p a {
+	color: white;
+}
+
+#navBox p a:hover {
+	color: orange;
+}
+
+#navBox ul {
+	font-size: 1.5rem;
+}
+
+/*Large and medium nav*/
+.horizontalNav{
+	font-size: 2rem;
+}
+
+.horizontalNav a {
+	color: white;
+}
+
+.horizontalNav a:hover {
+	color: orange;
+}
+
+.horizontalNav a: {
+	color: red;
+}
+
+/*medium nav*/
+#mediumNav {
+	background-color: rgba(	128, 128, 128, 0.5);
+}
+
+/*Small nav*/
+.title-bar.show-for-small-only {
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+.top-bar.show-for-small-only{
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+.top-bar-left .dropdown.menu {
+	background-color: rgba(128, 128, 128, 0.0);
+	color: white;
+	font-size: 1rem;
+	padding-left: 2rem;
+}
+.top-bar-left .dropdown.menu a {
+	color: white;
+}
+
+#smallTitle {
+	font-size: 1rem;
+	width: 100%;
+	text-align: center;
+}
+
+.menu-icon {
+	transform: scale(1.4);
+}
+
+#smallMenu {
+	border-top: 1px solid white;
+}
+
+/*Medium/large container*/
+#videOrbitContainer, #videoOrbit{
+	position: absolute;
+	margin: 0;
+	margin-top: 10rem;
+}
+
+#videoOrbitContainer, #videoOrbit, .orbit, .orbit-slide, .orbit-container , .orbit-container li{
+	height: 95rem !important;
+}
+
+.videoDescription {
+	position: relative;
+	background-color: rgba(10, 10, 10, 0.4);
+	border-radius: 0 0 20px 20px;
+	color: white;
+	padding-left: 1rem;
+	text-align: center;
+	backdrop-filter: blur(5px);
+}
+
+.videoDescription h4 {
+	text-decoration: underline;
+}
+.videoDescription p {
+	font-size: 1rem;
+}
+
+.orbit-previous, .orbit-next {
+	font-size: 2rem;
+}
+
+
+/*Mobile Container*/
+
+#mobileVideoContainer {
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin-top: 0.5rem;
+}
+
+.title-bar-title a{
+	color: white;
+}
+
+.objectContainer {
+	position: absolute;
+	margin-top: 10rem;
+}
+
+.media-object {
+	margin-left: 10rem;
+	margin-top: 1rem;
+	margin-right: 10rem;
+	background-color: rgba(10, 10, 10, 0.4) !important;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+	backdrop-filter: blur(5px);
+}
+
+.media-object img{
+	max-width: 400px;
+	border-radius: 5px;
+}
+
+#videoModal {
+	background-color: rgba(128, 128, 128, 0.0); !important;
+	border: none !important;
+	text-align: center;
+	width: 1280px;
+	height: 100%;
+}
+
+.reveal {
+	max-width: 1280px !important;
+	padding: 0 !important;
+}
+
+#videoModal #video {
+	margin-top: 5rem;
+}
+
+.reveal-overlay {
+	background-color: rgba(128, 128, 128, 0.7) !important;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+}
+
+.thumbnailContainer {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	margin-top: 12rem;
+	color: white;
+}
+
+.bioContainer {
+	position: absolute;
+	margin-top: 12rem;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+
+.bioContainer .grid-container {
+	backdrop-filter: blur(10px);
+	background-color: rgba(10, 10, 10, 0.2);
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 1rem;
+}
+
+
+#bioText p {
+	font-size: 1rem;
+}
+
+.bioContainer img {
+	max-width: 55%;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.contactContainer {
+	width: 100%;
+	position: absolute;
+	top: 12rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.contactContainer h1 {
+	color: white;
+}
+
+.contactContainer .contact-us-form {
+	backdrop-filter: blur(10px);
+	background-color: rgba(10, 10, 10, 0.2);
+	border-radius: 20px 20px 20px 20px;
+	padding: 1rem;
+	width: auto;
+	max-width: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contactContainer input, .contactContainer textarea {
+	border-radius: 20px 20px 20px 20px;
+}
+
+.contact-us-form-actions input {
+	background-color: orange !important;
+}
+
+.contact-us-form-actions input:hover {
+	box-shadow: 0 0 0 2000px rgba(0,0,0,.7);
+}
+
+.successModal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	transform: translate(-50%, -50%);
+	color: black;
+	background-color: rgb(255,255,255);
+	border-radius: 20px 20px 20px 20px;
+	padding: 1rem;
+	box-shadow: 0 0 0 1000px rgba(0,0,0,.7);
+	display: none;
+}
+
+.successClose {
+	position: relative;
+	left: 95%;
+	font-size: 1.3rem;
+	color: red;
+	cursor:pointer;
+}
+
+.successClose:hover {
+	transform: scale(2); 
+}
+
+.showreelContainer {
+	width: 100%;
+}
+
+.showreelContainer .grid-container {
+	max-width: 100vw;
+}
+
+.showreelContainer, .showreelContainer .grid-container, .showreelContainer .medium-6 {
+	height: 100vh;
+}
+
+.showreelContainer .medium-6:hover {
+	background-color: rgba(10, 10, 10, 0.5);
+}
+
+.showreelContainer .grid-container {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.fi-video {
+	font-size: 7rem;
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+#musicVideoTag {
+	position: absolute;
+	top: 60%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.fi-loop {
+	font-size: 5rem;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fi-book {
+	font-size: 7rem;
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+#narrativeTag {
+	position: absolute;
+	top: 60%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.showreelContainer p {
+	font-size: 1rem;
+}
+
+.showreelContainer .medium-6:hover .fi-video {
+	font-size: 10rem;
+}
+
+.showreelContainer .medium-6:hover .fi-book {
+	font-size: 9rem;
+}
+
+.showreelContainer .medium-6:hover p {
+	font-size: 1.5rem;
+}
