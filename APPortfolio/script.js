@@ -134,5 +134,5 @@ $(".successClose").on("click", function() {
 });
 
 $(".APContactSubmit").on("click", function() {
-	alert("I am an alert box!");
+	alert("Message Sent!");
 });
