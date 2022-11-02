@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" href="main.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta charset="UTF-8">
+    <meta name="description" content="Ring of Fire">
+    <meta name="author" content="Sam Carolan">
+</head>
+<body>
+	<section id="startGame">
+		<h1> Welcome to Ring of Fire </h1>
+		<h2> Start Game </h2>
+		<form class="welcomeForm" method="get" action="startForm.php">
+			<label> Username</label>
+			<input type="text" placeholder="username" name="username">
+			<input type="submit" id="beginGame" value="Start Game">
+		</form>
+	</section>
+	<section id="joinGame">
+		<h2> Join Game </h2>
+		<form id="welcomeForm" method="get" action="joinForm.php">
+			<label> Session ID</label>
+			<input type="text" placeholder="Enter session ID" name="sessionid">
+			<input type="submit" id="enterGame" value="Join Game">
+		</form>
+	</section>
+	<div class="gameContainer">
+		<section id="chosenContainer">
+			<img id="card" src="images/PNG/gray_back.png">
+			<h2>Card Meaning</h2>
+			<p id="meaning">define what card means</p>
+			<h2>Rules</h2>
+			<p id="rules"></p>
+		</section>
+		<section id="gameInfo">
+			<h2>Chosen</h2>
+			<p id="chosenDisplay"></p>
+		</section>
+
+		<section id="ruleBox">
+			<h2> Enter a rule </h2>
+			<input id="ruleText" type="text" placeholder="e.g drink if you call someone by their first name"> 
+			<br>
+			<br>
+			<button id="inputRule"> Submit </button>
+		</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

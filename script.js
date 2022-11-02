@@ -125,13 +125,13 @@ var ROFCounter = 0;
 $("#ROF").click(function(){
 	if(ROFCounter == 0){
 		$("#ROF p").css('display', 'block');
-		$("#ROF").css('display', 'block');
+		$("#ROFOpenButton").css('display', 'block');
 		$("#ROF").css('border-bottom', '0.1em solid darkgray');
 		$("#ROF span").html("&#x25B2;");
 		ROFCounter = 1;
 	}else {
 		$("#ROF p").css('display', 'none');
-		// $("#ROFButton").css('display', 'none');
+		$("#ROFOpenButton").css('display', 'none');
 		$("#ROF").css('border-bottom', 'none');
 		$("#ROF span").html("&#x25BC;");
 		ROFCounter = 0;
@@ -150,6 +150,15 @@ $("#iccupOpenButton").click(function(){
 
 $("#APOpenButton").click(function(){
 	var win = window.open('/APPortfolio/index.html', '_blank');
+	if (win) {
+    	win.focus();
+	} else {
+    	alert('Please allow popups for this website');
+	}
+});
+
+$("#ROFOpenButton").click(function(){
+	var win = window.open('/ringoffire/index.html', '_blank');
 	if (win) {
     	win.focus();
 	} else {

@@ -1,0 +1,49 @@
+html, body {
+	font-family: "Helvetica", sans-serif;
+}
+
+body {
+	position: relative;
+	background-color: gray;
+	overflow-x: hidden;
+}
+
+.gameContainer{
+	display: flex;
+}
+
+.gameContainer section {
+	width: 45%;
+}
+
+#startGame, #joinGame {
+	display: none;
+}
+
+#card {
+	width: 180px;
+	height: 270px;
+}
+
+#ruleBox{
+	border: 0.1em solid white;
+	background-color: lightgray;
+	height: 10em;
+	padding-left: 1em;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	display: none;
+}
+
+#ruleText {
+	width: 80%;
+}
+
+#inputRule {
+	background-color: gray;
+	color: white;
+	height: 2em;
+	border-radius: 0.5em;
+	border: none;
+}
