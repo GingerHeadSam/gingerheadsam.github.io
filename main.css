@@ -144,6 +144,28 @@ nav ul :hover{
 	display: none;
 }
 
+footer {
+	position: fixed;
+	display: block;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color:  slategrey;
+	z-index: -1;
+}
+
+footer h6 a{
+	text-decoration: none;
+}
+
+
+#loading {
+	position: relative;
+	left: 50%;
+	top: 25rem;
+	
+}
+
 @media screen and (max-width: 1160px) {
 	#meImage{
 		position: absolute;
@@ -215,16 +237,4 @@ nav ul :hover{
 
 }
 
-footer {
-	position: fixed;
-	display: block;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	color:  slategrey;
-	z-index: -1;
-}
 
-footer h6 a{
-	text-decoration: none;
-}
