@@ -1,20 +1,22 @@
+ /* Colours: #383946; #7b7f9b; #bfc5f0; #bfcaf0  */
+
 html, body {
 	font-family: "Arial", sans-serif;
 }
 
 body {
 	position: relative;
-	background-color: #BFC5F0;
+	background-color: #383946;
 	overflow: hidden;
 	max-width: 1920px;
-	color: black;
+	color: #dfe2f8;
 }
 
 
 nav {
 	display: flex;
 	width: 100%;
-	border-bottom: 0.1em solid black;
+	border-bottom: 0.1em solid #7b7f9b;
 }
 
 nav ul {
@@ -37,7 +39,7 @@ nav li{
 	text-decoration: none;
 	list-style: none;
 	padding: 1em;
-	color: black;
+	color: white;
 }
 
 nav ul :hover{
@@ -87,24 +89,41 @@ nav ul :hover{
 }
 
 #projectSection{
-	width: 40%;
+	width: 75%;
+	padding: 3em;
 	position: absolute;
 	left:10em;
 	top: 10em;
 	display: none;
+	background-color: #7b7f9b;
+	border-radius: 1em;
+	color: #dfe2f8;
+	
 }
 
 #projectSection h2{
 	width: 100%;
-	border-bottom: 0.1em solid darkgray;
+	border-bottom: 0.1em solid #383946;
+	text-align: center;
 }
 
 .currentProject{
 	cursor: pointer;
 	width: 100%;
 	padding-left: 0.5em;
-
+	text-align: left;
+	padding: 0.2em;
+	float: left;
 }
+
+/* .projectImage {
+	max-width: 29%;
+	float: right;
+	position: relative;
+	top: 2em;
+	display: none;
+} */
+
 
 #diss p, #iccup p, #APPortfolio p, #ROF p{
 	display: none;
@@ -116,11 +135,11 @@ nav ul :hover{
 	padding: 0.5em;
 	width: 4em;
 	text-align: center;
-	background-color: gray;
+	background-color: #383946;
 	color: white;
 	font-weight: 550;
 	display: none;
-	box-shadow: 4px 4px 9px #888888
+	box-shadow: 4px 4px 9px #383946
 }
 
 #resumeSection {
@@ -156,6 +175,7 @@ footer {
 
 footer h6 a{
 	text-decoration: none;
+	color:  slategrey;
 }
 
 
@@ -166,11 +186,38 @@ footer h6 a{
 	
 }
 
+/* #testSection {
+	width: 100%;
+}
+
+.projectBox {
+	background-color: #7b7f9b;
+	width: 10em;
+	display: inline-block;
+	border-radius: 2em;
+	position: relative;
+	top: 35em;
+	left: 10em;
+	text-align: center;
+	margin-right: 2em;
+}
+
+.projectBox h3 {
+	position: relative;
+	top: 30%;
+}
+
+.projectBox h4 {
+	display: none; */
+/* } */
+
+/* Smaller screen details */
+
 @media screen and (max-width: 1160px) {
 	#meImage{
 		position: absolute;
 		left: 60%;
-		top: 5em;
+		top: 3em;
 		width: 50%;
 		z-index: -1;
 	}
@@ -233,6 +280,10 @@ footer h6 a{
 	#projectSection h2{
 		width: 100%;
 		border-bottom: 0.1em solid darkgray;
+	}
+
+	.projectImage {
+		display: none;
 	}
 
 }

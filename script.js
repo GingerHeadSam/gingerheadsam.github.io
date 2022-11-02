@@ -1,8 +1,10 @@
 var url = "";
+var windowWidth = $(window).width();
+
 
 //Nav clicks
 $("#nameNav").click(function(){
-	if ($(window).width() > 1000) {
+	if (windowWidth > 1000) {
 		$("#aboutSection").css('display', 'none');
 		$("#resumeSection").css('display', 'none');
 		$("#projectSection").css('display', 'none');
@@ -12,8 +14,6 @@ $("#nameNav").click(function(){
 		$("body").css("overflow-y", "hidden");
 		window.location.hash = "Home"
 	}
-
-	
 });
 
 $("#homeNav").click(function(){
@@ -76,7 +76,7 @@ var dissCounter = 0;
 $("#diss").click(function(){
 	if(dissCounter == 0){
 		$("#diss p").css('display', 'block');
-		$("#diss").css('border-bottom', '0.1em solid darkgray');
+		$("#diss").css('border-bottom', '0.1em solid #383946');
 		$("#diss span").html("&#x25B2;")
 		dissCounter = 1;
 	}else {
@@ -92,7 +92,7 @@ $("#iccup").click(function(){
 	if(iccupCounter == 0){
 		$("#iccup p").css('display', 'block');
 		$("#iccupOpenButton").css('display', 'block');
-		$("#iccup").css('border-bottom', '0.1em solid darkgray');
+		$("#iccup").css('border-bottom', '0.1em solid #383946');
 		$("#iccup span").html("&#x25B2;");
 		iccupCounter = 1;
 	}else {
@@ -109,7 +109,7 @@ $("#APPortfolio").click(function(){
 	if(APCounter == 0){
 		$("#APPortfolio p").css('display', 'block');
 		$("#APOpenButton").css('display', 'block');
-		$("#APPortfolio").css('border-bottom', '0.1em solid darkgray');
+		$("#APPortfolio").css('border-bottom', '0.1em solid #383946');
 		$("#APPortfolio span").html("&#x25B2;");
 		APCounter = 1;
 	}else {
@@ -126,14 +126,18 @@ $("#ROF").click(function(){
 	if(ROFCounter == 0){
 		$("#ROF p").css('display', 'block');
 		$("#ROFOpenButton").css('display', 'block');
-		$("#ROF").css('border-bottom', '0.1em solid darkgray');
+		$("#ROF").css('border-bottom', '0.1em solid #383946');
 		$("#ROF span").html("&#x25B2;");
+		// if(windowWidth > 1000){
+		// 	$("#ROFImage").css('display', 'block');
+		// }
 		ROFCounter = 1;
 	}else {
 		$("#ROF p").css('display', 'none');
 		$("#ROFOpenButton").css('display', 'none');
 		$("#ROF").css('border-bottom', 'none');
 		$("#ROF span").html("&#x25BC;");
+		// $("#ROFImage").css('display', 'none');
 		ROFCounter = 0;
 	}
 });
@@ -166,3 +170,4 @@ $("#ROFOpenButton").click(function(){
 	}
 });
 
+$(".projectBox").css("height", $(".projectBox").width());
